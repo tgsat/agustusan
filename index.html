@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="favicon.png" />
+
+    <title>Formulir Pendaftaran Lomba 17 Agustus</title>
+    <link rel="stylesheet" href="Google Sheet.css">
+</head>
+
+<body>
+
+    <h2 id="year"></h2>
+    <p>DALAM RANGKA MERIAHKAN HARI KEMERDEKAAN INDONESIA.</p>
+
+    <div class="container">
+        <form action="" method="post" name="form-sheet">
+
+            <div class="row">
+                <a href="data.html" class="fcc-btn">Lihat Data Pendaftar</a>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <span style="text-transform:uppercase;">
+                        <label>Nama Lengkap</label>
+                    </span>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="Nama Lengkap" placeholder="Nama Lengkap" required
+                        oninvalid="this.setCustomValidity('Nama Lengkap Tidak Boleh Kosong!')"
+                        oninput="this.setCustomValidity('')">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <span style="text-transform:uppercase;">
+                        <label>Nama Orang Tua</label>
+                    </span>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="Nama Orang Tua" placeholder="Nama Orang Tua" required
+                        oninvalid="this.setCustomValidity('Nama Orang Tua Tidak Boleh Kosong!')"
+                        oninput="this.setCustomValidity('')">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <span style="text-transform:uppercase;">
+                        <label>Alamat Lengkap</label>
+                    </span>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="Alamat Lengkap" placeholder="Alamat Lengkap" required
+                        oninvalid="this.setCustomValidity('Alamat Lengkap Tidak Boleh Kosong!')"
+                        oninput="this.setCustomValidity('')">
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" value="Submit" id="submit">
+            </div>
+        </form>
+    </div>
+
+    <script src="Google Sheet.js">
+    </script>
+
+</body>
+
+</html>
