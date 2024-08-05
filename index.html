@@ -35,11 +35,25 @@
             <div class="row">
                 <div class="col-25">
                     <span style="text-transform:uppercase;">
+                        <label>Kategori</label>
+                    </span>
+                </div>
+                <div class="col-75">
+                    <select name="Kategori" required="" id="menu" onChange="checkOption(this)">
+                        <option value="" disabled selected>-- Pilih Salah Satu --</option>
+                        <option value="Anak Anak">Anak Anak</option>
+                        <option value="Orang Tua">Orang Tua</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <span style="text-transform:uppercase;">
                         <label>Nama Orang Tua</label>
                     </span>
                 </div>
                 <div class="col-75">
-                    <input type="text" name="Nama Orang Tua" placeholder="Nama Orang Tua" required
+                    <input type="text" name="Nama Orang Tua" placeholder="Nama Orang Tua" id="inputs" required disabled
                         oninvalid="this.setCustomValidity('Nama Orang Tua Tidak Boleh Kosong!')"
                         oninput="this.setCustomValidity('')">
                 </div>
@@ -51,9 +65,9 @@
                     </span>
                 </div>
                 <div class="col-75">
-                    <input type="text" name="Alamat Lengkap" placeholder="Alamat Lengkap" required
+                    <textarea type="text" name="Alamat Lengkap" placeholder="Alamat Lengkap" required
                         oninvalid="this.setCustomValidity('Alamat Lengkap Tidak Boleh Kosong!')"
-                        oninput="this.setCustomValidity('')">
+                        oninput="this.setCustomValidity('')" maxlength="150" cols="30" rows="10"></textarea>
                 </div>
             </div>
             <div class="row">

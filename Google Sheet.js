@@ -12,6 +12,13 @@ form.addEventListener('submit', e => {
         .catch(error => { console.error('Error!', error.message) })
 })
 
+// for header title get date now format year only  
 const currentDate = new Date();
 const year = currentDate.getFullYear();
 document.getElementById("year").innerHTML = "Lomba 17 Agustus " + year;
+
+// for disable input textformfield before select category  
+function checkOption(obj) {
+    var input = document.getElementById("inputs");
+    input.disabled = obj.value == "Orang Tua";
+}
