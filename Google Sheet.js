@@ -19,6 +19,9 @@ document.getElementById("year").innerHTML = "Lomba 17 Agustus " + year;
 
 // for disable input textformfield before select category  
 function checkOption(obj) {
+    if (obj.value == "Anak Anak") {
+        "Anak Anak";
+    }
     var input = document.getElementById("inputs");
     input.disabled = obj.value == "Orang Tua";
 }
